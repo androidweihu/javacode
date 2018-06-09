@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+           version="4.0">
+
+    <servlet>
+        <servlet-name>SessionServlet1</servlet-name>
+        <servlet-class>com.jd.session.SessionServlet1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SessionServlet2</servlet-name>
+        <servlet-class>com.jd.session.SessionServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionServlet1</servlet-name>
+        <url-pattern>/session1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SessionServlet2</servlet-name>
+        <url-pattern>/session2</url-pattern>
+    </servlet-mapping>
+</web-app>
